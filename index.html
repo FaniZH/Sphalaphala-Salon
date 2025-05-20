@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Sphalaphala Salon</title>
+
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+<!--Start Navigation-->
+<header>
+    <div class="navbar-container">
+        <div class="logo">
+            <a href="#index.html"><img src="images/logo.png" alt="Savior Cafe Logo"></a>
+        </div>
+        
+        <!-- Burger Menu (For Mobile & Tablet) -->
+        <div class="burger-menu" id="burger-menu">
+            <i class="fas fa-bars" id="menu-icon"></i> <!-- Open Icon -->
+            <i class="fas fa-times" id="close-icon" style="display: none;"></i> <!-- Close Icon -->
+        </div>
+
+        <!-- Navigation Links -->
+        <nav>
+            <ul id="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="Contact.html">Contacts</a></li>
+                <li><a href="Book.html" id="Book_Now">Book Now</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="navbar-line"></div> <!-- Line added separately -->
+</header>
+<!--End Navigation-->
+
+
+    <!--Start Landing Page-->
+    <div class="landingPage" id="slide1">
+        <img src="images/landing1.jpg" alt="Luxury Hair Styling">
+        <div class="slide1_Content">
+            <h2>Sphalaphala Salon</h2>
+            <p>Our expert stylists craft trendy cuts and vibrant color transformations to bring your dream look to life.</p>
+            <div class="slide1_buttons">
+                <a href="Book.html"><button>Book an Appointment</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="landingPage" id="slide2">
+        <img src="images/landing2.jpg" alt="Pampering Spa Treatments">
+        <div class="slide2_Content">
+            <h2>Sphalaphala Salon</h2>
+            <p>Relax with our rejuvenating spa treatments, from soothing massages to revitalizing facials.</p>
+            <div class="slide1_buttons">
+                <a href="Book.html"><button>Book an Appointment</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="landingPage" id="slide3">
+        <img src="images/landing3.jpg" alt="Perfectly Polished Nails">
+        <div class="slide3_Content">
+            <h2>Sphalaphala Salon</h2>
+            <p>Get flawless nails with elegant designs and long-lasting finishes by our professional nail technicians.</p>
+            <div class="slide1_buttons">
+                <a href="Book.html"><button>Book an Appointment</button></a>
+            </div>
+        </div>
+    </div>
+    <!--Start Landing Page-->
+
+    <!-- Navigation Buttons Positioned Outside the Slides -->
+    <button id="prev">&#10094;</button>
+    <button id="next">&#10095;</button>
+    <!--End Landing Page-->
+
+
+    <!-- ABOUT START -->
+    <div class="About slide-up">
+        <h2>About Us</h2>
+        <h4>Welcome to Sphalaphala Salon</h4>
+        <div class="animated-line"><div class="moving-dot"></div></div>
+
+        <div class="About_Content">
+            <!-- Text on the Left -->
+            <div class="About_txt">
+                <p>
+                    At <strong>Sphalaphala Salon</strong>, we are dedicated to enhancing your beauty and confidence with our exceptional hair and beauty services. 
+                    Located in a warm and inviting space, we offer professional hairstyling, nail treatments, and spa services to help you look and feel your best.  
+                    <br><br>
+                    Our team of skilled stylists and beauty experts use top-quality products to create stunning hairstyles, vibrant hair colors, and flawless makeup looks tailored to your unique style.  
+                    <br><br>
+                    Whether you're preparing for a special occasion or simply indulging in some well-deserved self-care, Sphalaphala Salon is your go-to destination for elegance, relaxation, and transformation.
+                </p>
+                
+                 for small devices i want the images to moved on top of the mission and vision
+                <!-- Mission & Vision Section -->
+                <div class="mission_vision">
+                    <div class="mission_item">
+                        <h3>Our Mission</h3>
+                        <i class="fas fa-bullseye"></i>
+                        <p>To provide exceptional beauty services that enhance our clients' confidence and self-expression.</p>
+                    </div>
+                    
+                    <div class="vision_item">
+                        <h3>Our Vision</h3>
+                        <i class="fas fa-eye"></i>
+                        <p>To be the leading beauty destination, known for innovation, quality, and customer satisfaction.</p>
+                    </div>
+                </div>
+        
+                <!-- Experience & Award Section -->
+                <div class="experience_award">
+                    <div class="exp_divider"></div>
+                    <div class="exp_item">
+                        <span class="exp_number">10+</span>
+                        <span class="exp_text">Years of <strong>EXCELLENCE</strong></span>
+                    </div>
+                    <div class="exp_divider"></div>
+                    <div class="exp_item">
+                        <span class="exp_number">5 Star</span>
+                        <span class="exp_text">Rated <strong>Top Beauty Salon</strong></span>
+                    </div>
+                </div>
+                <a href="About.html"><button class="Read_More">Read More</button></a>
+            </div>
+            
+            <!-- Images on the Right -->
+            <div class="About_img">
+                <img src="images/About1.png" alt="Salon Interior" id="About1">
+                <img src="images/About2.png" alt="Hair Styling" id="About2">
+                <img src="images/About3.png" alt="Nail Treatment" id="About3">
+                <img src="images/About4.png" alt="Spa Services" id="About4">
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT END -->
+
+    <!-- Why Choose Us Start -->
+    <div class="why_choose_us slide-up">
+        <h2>Why Choose Us</h2>
+        <h4>More than just a salon – we are a luxury experience, a beauty haven, and a place where elegance meets expertise.</h4>
+        <div class="animated-line"><div class="moving-dot"></div></div>
+        <!-- Images Section -->
+        <div class="why_images">
+            <img src="images/Why_us1.png" alt="Luxurious hair treatment">
+            <img src="images/Why_us2.png" alt="Professional makeup application">
+            <img src="images/Why_us3.png" alt="Elegant nail designs">
+            <img src="images/Why_us4.png" alt="Relaxing spa treatments">
+        </div>
+
+        <div class="why_content">
+            <div class="why_item">
+                <i class="fas fa-star"></i>
+                <h3>Unmatched Quality</h3>
+                <p>We use only top-tier products and expert techniques to deliver flawless hair, makeup, nails, and spa treatments, ensuring you leave looking and feeling your best.</p>
+            </div>
+            <div class="why_item">
+                <i class="fas fa-spa"></i>
+                <h3>Relaxing & Luxurious Ambiance</h3>
+                <p>Our salon is designed to offer a serene and indulgent atmosphere, where you can unwind while receiving world-class beauty treatments.</p>
+            </div>
+            <div class="why_item">
+                <i class="fas fa-award"></i>
+                <h3>Award-Winning Service</h3>
+                <p>Recognized as a leading beauty destination, we take pride in our skilled professionals, innovative techniques, and outstanding customer service.</p>
+            </div>
+            <div class="why_item">
+                <i class="fas fa-users"></i>
+                <h3>Trusted by Influencers & Celebrities</h3>
+                <p>Our salon is a favorite among social media influencers, celebrities, and trendsetters who trust us to keep them looking glamorous.</p>
+            </div>
+            <div class="why_item">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Creative & Trendsetting</h3>
+                <p>From bold new hairstyles to the latest nail trends and flawless makeup looks, we stay ahead of the curve, setting beauty trends rather than following them.</p>
+            </div>
+            <div class="why_item">
+                <i class="fas fa-heart"></i>
+                <h3>Dedicated to Your Satisfaction</h3>
+                <p>Your beauty is our passion. Our team is committed to personalized service, ensuring you receive an experience tailored to your unique style and needs.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Why Choose Us End -->
+
+    <!-- Services Start -->
+    <div class="services slide-up">
+        <h2>Our Services</h2>
+        <p>Indulge in expert hair, nail, makeup, and spa treatments designed to enhance your beauty and well-being.</p>
+        <div class="animated-line"><div class="moving-dot"></div></div>
+
+        <div class="service_container">
+            <!-- Hair Services -->
+            <div class="service_item">
+                <img src="images/Why_us1.png" alt="Hair Services">
+                <h3>Hair Services</h3>
+                <p>From braiding and relaxing to dreadlocks, weaves, and styling, we offer a wide range of hair treatments to suit your needs.</p>
+                <a href="hair.html" class="read_more">Read More →</a>
+            </div>
+
+            <!-- Nail Services -->
+            <div class="service_item">
+                <img src="images/Why_us3.png" alt="Nail Services">
+                <h3>Nail Services</h3>
+                <p>Get the perfect manicure and pedicure with our range of nail enhancements, including acrylics, gel polish, nail art, and paraffin treatments.</p>
+                <a href="nails.html" class="read_more">Read More →</a>
+            </div>
+
+            <!-- Makeup Services -->
+            <div class="service_item">
+                <img src="images/Why_us2.png" alt="Makeup Services">
+                <h3>Makeup/ Spa & Relaxation Services</h3>
+                <p>Whether for a special event, bridal glam, or a professional look, our makeup artists ensure a flawless and long-lasting finish.</p>
+                <a href="make_up.html" class="read_more">Read More →</a>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+    <!--Reservations Start-->
+    <div class="Appointment slide-up">
+       <h2>Appointments</h2>
+       <h4>Book Your Beauty Session</h4>
+       <p class="Appointment-intro">
+           Get the perfect hair, nails, makeup, or spa treatment at **Siphalaphala Salon**. Book your appointment today and let us pamper you!  
+       </p>
+        <div class="animated-line"><div class="moving-dot"></div></div>
+        
+        <div class="Appointment-container">
+            <!-- Left Side: Contact Info -->
+            <div class="Appointment-info">
+                <p>We welcome reservations for all occasions. If you have any special requirements such as birthday setups, 
+                    private dining, or dietary preferences, feel free to let us know.</p>
+                <p><i class="fas fa-phone"></i> Phone: 031-917-2294</p>
+                <p><i class="fas fa-envelope"></i>Email: hello@sphalaphalasalon.co.za</p>
+                <a href="Contact.html"><button class="contact-btn">Contact</button></a>
+            </div>
+
+            <!-- Right Side: Reservation Form -->
+            <form action="" id="AppointmentForm" class="Appointment-form">
+                <div class="form-row">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-row">
+                    <input type="datetime-local" id="datetime" required>
+                    <select id="people" required>
+                        <option value="1">People 1</option>
+                        <option value="2">People 2</option>
+                        <option value="3">People 3</option>
+                        <option value="4+">People 4+</option>
+                    </select>
+                </div>
+                <textarea id="request" placeholder="Special Request"></textarea>
+                <button type="submit" class="book-now-btn">BOOK NOW</button>
+            </form>
+            
+        </div>
+    </div>
+    <!--Reservations End-->
+
+    <!-- Our Staff Start -->
+    <div class="our_staff slide-up">
+        <h2>Meet Our Team</h2>
+        <p>Our team of skilled professionals is dedicated to providing top-tier beauty and wellness services.</p>
+        <div class="animated-line"><div class="moving-dot"></div></div>
+        <div class="staff_slider">
+            <div class="staff_container">
+                <div class="staff_item">
+                    <img src="images/work1.png" alt="Hair Stylist">
+                    <h3>Amanda N.</h3>
+                    <p>Senior Hair Stylist</p>
+                    <p>Specializes in braiding, weaves, and precision cuts.</p>
+                </div>
+
+                <div class="staff_item">
+                    <img src="images/work1.png" alt="Nail Technician">
+                    <h3>Jessica M.</h3>
+                    <p>Nail Technician</p>
+                    <p>Expert in acrylics, gel polish, and custom nail art.</p>
+                </div>
+
+                <div class="staff_item">
+                    <img src="images/work1.png" alt="Makeup Artist">
+                    <h3>Kayla R.</h3>
+                    <p>Professional Makeup Artist</p>
+                    <p>Bridal, editorial, and glam makeup specialist.</p>
+                </div>
+
+                <div class="staff_item">
+                    <img src="images/work1.png" alt="Spa Therapist">
+                    <h3>David L.</h3>
+                    <p>Spa Therapist</p>
+                    <p>Hot stone therapy, deep tissue massage, and facials.</p>
+                </div>
+
+                <div class="staff_item">
+                    <img src="images/work1.png" alt="Hair Color Specialist">
+                    <h3>Samantha K.</h3>
+                    <p>Hair Color Specialist</p>
+                    <p>Expert in balayage, ombré, and custom coloring.</p>
+                </div>
+            </div>
+
+            <!-- Arrows Positioned Below -->
+            <div class="staff_arrows">
+                <button id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                <button id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- Our Staff End -->
+
+
+    <!-- Meet Our Clients -->
+    <div class="clients_Testimonial slide-up">
+        <h2>What Our Clients Say</h2>
+        <p>Our clients love the transformation and care they receive at <strong>Siphalaphala Salon</strong>. See what they have to say!</p>
+        <div class="animated-line"><div class="moving-dot"></div></div>
+
+        <div class="clients_slider">
+            <div class="clients_container">
+                <div class="clients_item">
+                    <img src="images/customer1.png" alt="Client Testimonial">
+                    <h3>Thando M.</h3>
+                    <p>"Professional stylists who truly listen. I always leave feeling confident and beautiful!"</p>
+                </div>
+
+                <div class="clients_item">
+                    <img src="images/customer1.png" alt="Client Testimonial">
+                    <h3>Linda K.</h3>
+                    <p>"Best nail technicians ever! My nails have never looked this good!"</p>
+                </div>
+
+                <div class="clients_item">
+                    <img src="images/customer1.png" alt="Client Testimonial">
+                    <h3>Boniswa R.</h3>
+                    <p>"Flawless bridal makeup! They knew exactly how to enhance my features."</p>
+                </div>
+
+                <div class="clients_item">
+                    <img src="images/customer1.png" alt="Client Testimonial">
+                    <h3>Kabelo S.</h3>
+                    <p>"Most relaxing facial and massage! I left feeling completely refreshed."</p>
+                </div>
+
+                <div class="clients_item">
+                    <img src="images/customer1.png" alt="Client Testimonial">
+                    <h3>Zanele D.</h3>
+                    <p>"Love my new hair color! The perfect shade for my skin tone!"</p>
+                </div>
+            </div>
+
+            <!-- Arrows Positioned Below -->
+            <div class="staff_arrows">
+                <button id="prevBtn1"><i class="fas fa-chevron-left"></i></button>
+                <button id="nextBtn2"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- Meet Our Clients -->
+
+    <!-- Footer Section Start-->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <img src="images/logo.png" alt="Siphalaphala Salon Logo">
+                <p>We are committed to providing top-notch services, ensuring customer satisfaction, and delivering quality results.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Book.html">Book Now!!</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 133 Bulwer Road, Glenwood</p>
+                <p><i class="fas fa-phone"></i> 031-917-2294</p>
+                <p><i class="fas fa-envelope"></i> hello@sphalaphalasalon.co.za</p>
+            </div>
+
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="https://web.facebook.com/sphalaphalasalon/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://web.twitter.com/sphalaphalasalon/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/sphalaphalasalon/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Siphalaphala Salon | All Rights Reserved.</p>
+            <p id="design">Designed by ZH Madlala</p>
+        </div>
+        
+        <a href="#" class="back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </footer>
+    <!-- Footer Section End-->  
+    
+    <script src="JS/main.js"></script>
+</body>
+</html>

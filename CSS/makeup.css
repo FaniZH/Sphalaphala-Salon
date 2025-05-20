@@ -1,0 +1,116 @@
+/* General Styling */
+.Beauty {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff5f8; /* Light pink background for elegance */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Heading Styles */
+.Beauty h2 {
+    font-size: 2.2em;
+    color: #d63384; /* Soft pink shade */
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.Beauty h4 {
+    font-size: 1.4em;
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* Animated Line */
+.animated-line {
+    width: 80px;
+    height: 4px;
+    background: #d63384;
+    margin: 10px auto 30px;
+    position: relative;
+    border-radius: 2px;
+}
+
+.moving-dot {
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    animation: moveDot 2s linear infinite;
+}
+
+@keyframes moveDot {
+    0% { left: 0; }
+    50% { left: 70px; }
+    100% { left: 0; }
+}
+
+/* Image Section - Directly Below Headings */
+.About_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 20px auto 30px;
+}
+
+.About_img img {
+    width: 22%;
+    min-width: 150px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.About_img img:hover {
+    transform: scale(1.05);
+}
+
+/* Text Section */
+.Beauty_txt {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Table Styling */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #eee;
+    text-align: left;
+}
+
+th {
+    background: #d63384;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    color: #555;
+}
+
+tr:nth-child(even) {
+    background: #fdf0f3;
+}
+
+tr:hover {
+    background: #fde2eb;
+}

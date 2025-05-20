@@ -1,0 +1,122 @@
+.landingPage {
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.landingPage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
+    z-index: 1;
+}
+
+.landingPage img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.landingPage h2,
+.landingPage p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; /* Makes sure text appears above the dark overlay */
+}
+
+.landingPage h2 {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.landingPage p {
+    top: 70%;
+    font-size: 1rem;
+}
+
+.landingPage a {
+    color: #098a82;
+    text-decoration: none;
+}
+
+
+
+.celebrity_friends {
+    background-image: linear-gradient(rgba(223, 7, 173, 0.8), rgba(0, 0, 0, 0.8)), url("/images/Why_us.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    padding: 60px 20px;
+    text-align: center;
+    color: #fff; /* Ensures readability over the background */
+}
+
+.celebrity_friends h2 {
+    font-size: 36px;
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.celebrity_friends p {
+    margin-bottom: 30px; /* Space below the paragraph */
+}
+
+#celeb_p{
+    margin-bottom: 30px; /* Space below the paragraph */
+    font-size: 24px; /* Slightly larger font size */
+}
+
+.celebrity_items {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center align the images */
+    gap: 30px; /* Space between items */
+}
+
+.celebrity_item {
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for contrast */
+    padding: 15px;
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center text */
+    max-width: 180px; /* Set a max width for each item */
+}
+
+.celebrity_item img {
+    width: 100%; /* Full width of the item */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.rating {
+    font-size: 1.2em; /* Adjust font size for rating */
+    margin: 5px 0; /* Space around rating */
+}
+
+.comment {
+    font-size: 0.9em; /* Smaller font size for comment */
+    color: #333; /* Dark text color for contrast */
+}
+
+.scroll_buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    margin-top: 15px; /* Space between items and buttons */
+}
+
+.scroll_left, .scroll_right {
+    background-color: #df07ad; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    padding: 10px 15px; /* Button padding */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 5px; /* Rounded corners */
+    margin: 0 10px; /* Space between buttons */
+    font-size: 18px; /* Button text size */
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Sphalaphala Salon</title>
+
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/about.css">
+</head>
+<body>
+    <!--Start Navigation-->
+    <header>
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Savior Cafe Logo"></a>
+            </div>
+            
+            <!-- Burger Menu (For Mobile & Tablet) -->
+            <div class="burger-menu" id="burger-menu">
+                <i class="fas fa-bars" id="menu-icon"></i> <!-- Open Icon -->
+                <i class="fas fa-times" id="close-icon"></i> <!-- Close Icon -->
+            </div>
+
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="Contact.html">Contacts</a></li>
+                    <li><a href="Book.html" id="Book_Now" class="active">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="navbar-line"></div> <!-- Line added separately -->
+    </header>
+    <!--End Navigation-->
+
+
+    <!--Start Landing Page-->
+    <div class="landingPage" id="slide1">
+        <img src="images/landing1.jpg" alt="Luxury Hair Styling">
+        <h2>Make An Appointment Now!!</h2>
+        <p><a href="index.html">Home</a> &gt; Book</p>
+    </div>
+    <!--End Landing Page-->
+
+    <!--Reservations Start-->
+    <div class="Appointment slide-up">
+        <h2>Appointments</h2>
+        <h4>Book Your Beauty Session</h4>
+        <p class="Appointment-intro">
+            Get the perfect hair, nails, makeup, or spa treatment at **Siphalaphala Salon**. Book your appointment today and let us pamper you!  
+        </p>
+        
+ 
+         <div class="animated-line"><div class="moving-dot"></div></div>
+ 
+         <div class="Appointment-container">
+             <!-- Left Side: Contact Info -->
+             <div class="Appointment-info">
+                 <p>We welcome reservations for all occasions. If you have any special requirements such as birthday setups, 
+                     private dining, or dietary preferences, feel free to let us know.</p>
+                 <p><i class="fas fa-phone"></i> Phone: 031-917-2294</p>
+                 <p><i class="fas fa-envelope"></i>Email: hello@sphalaphalasalon.co.za</p>
+                 <a href="Contact.html"><button class="contact-btn">Contact</button></a>
+             </div>
+ 
+             <!-- Right Side: Reservation Form -->
+             <form action="" id="AppointmentForm" class="Appointment-form">
+                 <div class="form-row">
+                     <input type="text" id="name" placeholder="Your Name" required>
+                     <input type="email" id="email" placeholder="Your Email" required>
+                 </div>
+                 <div class="form-row">
+                     <input type="datetime-local" id="datetime" required>
+                     <select id="people" required>
+                         <option value="1">People 1</option>
+                         <option value="2">People 2</option>
+                         <option value="3">People 3</option>
+                         <option value="4+">People 4+</option>
+                     </select>
+                 </div>
+                 <textarea id="request" placeholder="Special Request"></textarea>
+                 <button type="submit" class="book-now-btn">BOOK NOW</button>
+             </form>
+             
+         </div>
+     </div>
+     <!--Reservations End-->
+
+    <!-- Our Staff Start -->
+    <div class="our_staff slide-up">
+        <h2>Meet Our Team</h2>
+        <p>Our team of skilled professionals is dedicated to providing top-tier beauty and wellness services.</p>
+        <div class="animated-line"><div class="moving-dot"></div></div>
+        <div class="staff_slider">
+            <div class="staff_container">
+                <div class="staff_item">
+                    <img src="images/work1.png" alt="Hair Stylist">
+                    <h3>Amanda N.</h3>
+                    <p>Senior Hair Stylist</p>
+                    <p>Specializes in braiding, weaves, and precision cuts.</p>
+                </div>
+
+                <div class="staff_item">
+                    <img src="images/work1.png" alt="Nail Technician">
+                    <h3>Jessica M.</h3>
+                    <p>Nail Technician</p>
+                    <p>Expert in acrylics, gel polish, and custom nail art.</p>
+                </div>
+
+                <div class="staff_item">
+                    <img src="images/work1.png" alt="Makeup Artist">
+                    <h3>Kayla R.</h3>
+                    <p>Professional Makeup Artist</p>
+                    <p>Bridal, editorial, and glam makeup specialist.</p>
+                </div>
+
+                <div class="staff_item">
+                    <img src="images/work1.png" alt="Spa Therapist">
+                    <h3>David L.</h3>
+                    <p>Spa Therapist</p>
+                    <p>Hot stone therapy, deep tissue massage, and facials.</p>
+                </div>
+
+                <div class="staff_item">
+                    <img src="images/work1.png" alt="Hair Color Specialist">
+                    <h3>Samantha K.</h3>
+                    <p>Hair Color Specialist</p>
+                    <p>Expert in balayage, ombré, and custom coloring.</p>
+                </div>
+            </div>
+
+            <!-- Arrows Positioned Below -->
+            <div class="staff_arrows">
+                <button id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                <button id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- Our Staff End -->
+     
+    <!-- Footer Section Start-->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <img src="images/logo.png" alt="Siphalaphala Salon Logo">
+                <p>We are committed to providing top-notch services, ensuring customer satisfaction, and delivering quality results.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Book.html">Book Now!!</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 133 Bulwer Road, Glenwood</p>
+                <p><i class="fas fa-phone"></i> 031-917-2294</p>
+                <p><i class="fas fa-envelope"></i> hello@sphalaphalasalon.co.za</p>
+            </div>
+
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="https://web.facebook.com/sphalaphalasalon/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://web.twitter.com/sphalaphalasalon/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/sphalaphalasalon/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Siphalaphala Salon | All Rights Reserved.</p>
+            <p id="design">Designed by ZH Madlala</p>
+        </div>
+        
+        <a href="#" class="back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </footer>
+    <!-- Footer Section End-->  
+
+    <script src="JS/main.js"></script>
+</body>
+</html>

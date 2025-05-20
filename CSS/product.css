@@ -1,0 +1,276 @@
+/* ===================== LANDING PAGE STYLING ===================== */
+.landingPage {
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    height: 400px;
+}
+
+.landingPage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
+    z-index: 1;
+}
+
+.landingPage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.landingPage h2,
+.landingPage p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.landingPage h2 {
+    top: 45%;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.landingPage p {
+    top: 65%;
+    font-size: 1.2rem;
+}
+
+.landingPage a {
+    color: #098a82;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .landingPage h2{
+        margin-top: -60px;
+    }
+    
+}
+/* ===================== GENERAL STYLES ===================== */
+.Retails {
+    text-align: center;
+    padding: 50px 5%;
+    background-color: #fdf6fb;
+}
+
+.Retails h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #6a0572;
+    font-weight: bold;
+}
+
+/* ===================== TABS ===================== */
+.menu-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.tab {
+    background: none;
+    border: 2px solid #6a0572;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 12px 22px;
+    color: #6a0572;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.tab.active {
+    background: #d90479;
+    color: white;
+    border-color: #d90479;
+}
+
+.tab:hover {
+    background: #098a82;
+    color: white;
+    border-color: #098a82;
+}
+
+/* ===================== CONTENT SECTIONS ===================== */
+.Classic_items, .Luxe_items, .Retail_items {
+    display: none;
+}
+
+.Classic_items.active, .Luxe_items.active, .Retail_items.active {
+    display: grid;
+}
+
+/* ===================== GRID LAYOUT FOR CLASSIC & LUXE RANGES ===================== */
+.Classic_items, .Luxe_items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+}
+
+@media (max-width: 1024px) {
+    .Classic_items, .Luxe_items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .Classic_items, .Luxe_items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* ===================== PANELS ===================== */
+.Classic_pane, .Luxe_pane {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    border: 2px solid #df07adcc;
+}
+
+.Classic_pane:hover, .Luxe_pane:hover {
+    transform: scale(1.05);
+}
+
+/* ===================== IMAGES ===================== */
+.Classic_pane img, .Luxe_pane img {
+    width: 40%;
+    max-height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* ===================== TITLES ===================== */
+.Classic_pane h2, .Luxe_pane h2 {
+    font-size: 24px;
+    color: #098a82;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* ===================== DESCRIPTION ===================== */
+.Classic_pane p, .Luxe_pane p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* ===================== TABLE STYLING ===================== */
+table {
+    width: 85%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #eee;
+    text-align: left;
+}
+
+th {
+    background: #d63384;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    color: #555;
+}
+
+tr:nth-child(even) {
+    background: #fdf0f3;
+}
+
+tr:hover {
+    background: #fde2eb;
+}
+
+/* ===================== RETAIL PRODUCTS SECTION ===================== */
+/* Retail Products Grid */
+.Retail_items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Responsive Layout for Smaller Screens */
+@media (max-width: 1024px) {
+    .Retail_items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .Retail_items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Individual Product Cards */
+.Retail_pane {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Retail_pane:hover {
+    transform: scale(1.05);
+}
+
+/* Product Images */
+.Retail_pane img {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Product Name */
+.Retail_pane h3 {
+    font-size: 20px;
+    color: #098a82;
+    margin: 10px 0;
+}
+
+/* Product Description */
+.Retail_pane p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Price */
+.Retail_pane .price {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #d90479;
+    margin-top: 10px;
+}

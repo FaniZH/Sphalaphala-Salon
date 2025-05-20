@@ -1,0 +1,277 @@
+
+.landingPage {
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.landingPage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
+    z-index: 1;
+}
+
+.landingPage img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.landingPage h2,
+.landingPage p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; /* Makes sure text appears above the dark overlay */
+}
+
+.landingPage h2 {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.landingPage p {
+    top: 70%;
+    font-size: 1rem;
+}
+
+.landingPage a {
+    color: #098a82;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 2.2em;
+    color: #d63384;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* General Styles */
+.hair_service {
+    padding: 40px;
+    background-color: #fdf6fb; /* Soft pink background */
+}
+
+.hair_service h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    margin-left: 480px;
+    color: #6a0572;
+    font-weight: bold;
+}
+
+/* Tab Buttons */
+.menu-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.tab {
+    background: none;
+    border: 2px solid #6a0572;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #6a0572;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.tab.active {
+    background: #d90479;
+    color: white;
+    border-color: #d90479;
+}
+
+.tab:hover {
+    background: #098a82;
+    color: white;
+    border-color: #098a82;
+}
+
+/* Hair Items Grid - Display in Two Rows, Four Columns */
+.Hair_items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Hair Service Cards */
+.Hair_pane {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Hair_pane img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.Hair_pane h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+/* Price Details */
+.details {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+    text-align: left;
+    padding-left: 10px;
+}
+
+/* Hover Effect */
+.Hair_pane:hover {
+    transform: scale(1.05);
+}
+
+/* Hide inactive service sections */
+.Hair_items.hidden {
+    display: none;
+}
+
+/**********************************************************************************************************************/
+/* Hair Items Grid - Display in Two Rows, Four Columns */
+.Combo_items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Hair Service Cards */
+.Combo_pane {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Combo_pane img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.Combo_pane h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+/* Price Details */
+.details {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+    text-align: left;
+    padding-left: 10px;
+}
+
+/* Hover Effect */
+.Combo_pane:hover {
+    transform: scale(1.05);
+}
+
+/* Hide inactive service sections */
+.Combo_items.hidden {
+    display: none;
+}
+
+/*****************************************************************************************************************/
+/* Hair Items Grid - Display in Two Rows, Four Columns */
+.Weekly_items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Hair Service Cards */
+.Weekly_pane {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Weekly_pane img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.Weekly_pane h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+/* Price Details */
+.details {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+    text-align: left;
+    padding-left: 10px;
+}
+
+/* Hover Effect */
+.Weekly_pane:hover {
+    transform: scale(1.05);
+}
+
+/* Hide inactive service sections */
+.Weekly_items.hidden {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .Hair_items, .Combo_items, .Weekly_items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hair_service h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        margin-left: 100px;
+        color: #6a0572;
+        font-weight: bold;
+    }
+    .Hair_items, .Combo_items, .Weekly_items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

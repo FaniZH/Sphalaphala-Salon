@@ -1,0 +1,158 @@
+
+.landingPage {
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.landingPage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
+    z-index: 1;
+}
+
+.landingPage img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.landingPage h2,
+.landingPage p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; /* Makes sure text appears above the dark overlay */
+}
+
+.landingPage h2 {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.landingPage p {
+    top: 70%;
+    font-size: 1rem;
+}
+
+.landingPage a {
+    color: #098a82;
+    text-decoration: none;
+}
+
+/* General Container Styling */
+.container {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff5f8;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Headings */
+h2 {
+    font-size: 2.2em;
+    color: #d63384;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.container h3 {
+    font-size: 1.5em;
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* Animated Line */
+.animated-line {
+    width: 80px;
+    height: 4px;
+    background: #d63384;
+    margin: 10px auto 30px;
+    position: relative;
+    border-radius: 2px;
+}
+
+.moving-dot {
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    animation: moveDot 2s linear infinite;
+}
+
+@keyframes moveDot {
+    0% { left: 0; }
+    50% { left: 70px; }
+    100% { left: 0; }
+}
+
+/* Image Section - Below Each h3 */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 15px auto 25px;
+}
+
+.image-container img {
+    width: 10%;
+    min-width: 100px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Table Styling */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #eee;
+    text-align: left;
+}
+
+th {
+    background: #d63384;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    color: #555;
+}
+
+tr:nth-child(even) {
+    background: #fdf0f3;
+}
+
+tr:hover {
+    background: #fde2eb;
+}
+
